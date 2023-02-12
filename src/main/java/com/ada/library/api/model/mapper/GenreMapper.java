@@ -14,9 +14,11 @@ import com.ada.library.domain.model.Genre;
 public interface GenreMapper {
 	
 	@Mapping(target = "id", ignore = true)
+	@Mapping(target = "books", ignore = true)
 	Genre parseToDomainObject(GenreDTO GenreDto);
 	
 	@Mapping(target = "id", ignore = true)
+	@Mapping(target = "books", ignore = true)
 	Genre copyToDomainObject(GenreDTO GenreDto, @MappingTarget Genre Genre);
 
 	GenreModel parseToApiModel(Genre Genre);

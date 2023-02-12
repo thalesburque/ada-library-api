@@ -14,9 +14,11 @@ import com.ada.library.domain.model.Publisher;
 public interface PublisherMapper {
 	
 	@Mapping(target = "id", ignore = true)
+	@Mapping(target = "books", ignore = true)
 	Publisher parseToDomainObject(PublisherDTO publisherDto);
 	
 	@Mapping(target = "id", ignore = true)
+	@Mapping(target = "books", ignore = true)
 	Publisher copyToDomainObject(PublisherDTO publisherDto, @MappingTarget Publisher publisher);
 
 	PublisherModel parseToApiModel(Publisher produto);

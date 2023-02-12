@@ -9,5 +9,8 @@ insert into book (isbn, name, genre_id, publisher_id) values ('2', 'Metamorfose'
 insert into book (isbn, name, genre_id, publisher_id) values ('teste', 'O velho e o mar', 2, 2);
 insert into book (isbn, name, genre_id, publisher_id) values ('asdf', 'O mítico homem-mês', 1, 1);
 
+insert into perfil (nome, descricao) values ('ROLE_ADMIN', 'Perfil de administrador');
+insert into perfil (nome, descricao) values ('ROLE_USER', 'Perfil de usuário comum');
+
 
 
