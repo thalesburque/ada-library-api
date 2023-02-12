@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+    
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: 'true'  
+    
+  jackson:
+    deserialization:
+      fail-on-ignored-properties: 'true'
+      fail-on-unknown-properties: 'true'
+      
+  mvc:
+    throw-exception-if-no-handler-found: 'true'
+    
+  web:
+    resources:
+      add-mappings: 'false'
